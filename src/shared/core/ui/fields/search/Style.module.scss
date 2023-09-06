@@ -1,0 +1,17 @@
+.Magnifier {
+    padding: 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F1F2F3;
+    border-radius: 100%;
+}
+.Input {    
+    overflow: hidden;
+    display: flex;
+    width: fit-content;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+    background-color: white;
+}

@@ -1,6 +1,7 @@
 import React from 'react';
 import style from '../../styling/Style.module.scss';
-import { Header } from '../../../../widgets/header';
+import { Header } from '../../../../shared/core/ui/header';
+import { Search } from '../../../../widgets/search';
 
 export const IndexPagePresentation = () => {
     return <>
@@ -10,8 +11,11 @@ export const IndexPagePresentation = () => {
         <div className={style['Wrapper']}>
 
             <div className={style['Content']}>
-                <h1 className={style['t1']}>1</h1>
-                <h1 className={style['t2']}>2</h1>
+                <div>
+                    <Search />
+                </div>
+
+                <h1>2</h1>
             </div>
 
         </div>

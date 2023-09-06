@@ -3,4 +3,6 @@ import './globals.scss';
 import { IndexPage } from '../pages/index';
 
 const root = createRoot(document.getElementById('root'));
-root.render(<IndexPage />);
+root.render(<>
+    <IndexPage />
+</>);
