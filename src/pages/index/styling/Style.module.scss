@@ -1,0 +1,12 @@
+.Wrapper {
+    margin: 30px auto auto auto;
+    max-width: 1140px;
+    border: 1px solid red;
+}
+.Content {
+    display: grid;
+    grid-template-columns: 366px 744px;
+    gap: 0 30px;
+}
+.t1 { background-color: orange; }
+.t2 { background-color: blue; }
