@@ -1,0 +1,25 @@
+.Wrapper {
+    margin-top: 15px;
+}
+.DialoguesHeader {
+    padding: 0 15px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.DialoguesHeader__count {
+    padding: 2px 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 9px;
+    font-size: 12px;
+    font-weight: 500;
+    background-color: #616F82;
+    color: white;
+}
+.DialoguesHeader__select {
+    font-size: 14px;
+    font-weight: 400;
+    color: #616F82;
+}
