@@ -3,6 +3,7 @@ import style from '../../styling/Style.module.scss';
 import { Header } from '../../../../shared/core/ui/header';
 import { Search } from '../../../../widgets/search';
 import { Dialogues } from '../../../../widgets/dialogues';
+import { Profile } from '../../../../widgets/profile';
 
 export const IndexPagePresentation = () => {
     return <>
@@ -17,7 +18,7 @@ export const IndexPagePresentation = () => {
                     <Dialogues />
                 </div>
 
-                <h1>2</h1>
+                <Profile />
             </div>
 
         </div>
