@@ -1,7 +1,7 @@
 import React from 'react';
 import style from '../../styling/Style.module.scss';
 import { Header } from '../../../../shared/core/ui/header';
-import { Search } from '../../../../widgets/search';
+import { Search } from '../../../../shared/components/search';
 import { Dialogues } from '../../../../widgets/dialogues';
 import { Profile } from '../../../../widgets/profile';
 

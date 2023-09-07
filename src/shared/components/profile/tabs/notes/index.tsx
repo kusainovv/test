@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React from "react";
 import { ThreePoints } from "../../../../../shared/core/ui/svg/three-points";
 import style from './Style.module.scss';
 

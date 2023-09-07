@@ -1,6 +1,6 @@
 import React from "react";
 import style from './Style.module.scss';
-import { ThreePoints } from "../../../shared/core/ui/svg/three-points";
+import { ThreePoints } from "../../../core/ui/svg/three-points";
 
 export const ProfileHeader = () => {
     return <div className={style['Wrapper']}>
