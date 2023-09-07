@@ -2,19 +2,39 @@
     padding: 10px;
 }
 .Consultation {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: row;
+    justify-content: space-between;
     margin-bottom: 10px;
-    padding: 11px 0 7px 10px;
+    padding: 11px 11px 7px 10px;
     box-sizing: border-box;
     width: 100%;
     min-height: 66px;
     border: 1px solid #CDCDCD;
     border-radius: 4px;
     filter: drop-shadow(0px 0px 4px rgba(47, 47, 47, 0.07));
+
+    &:first-child {
+        .ConsultationCamera {
+            background-color: #4198C5;
+            fill: red;
+        }
+    }
+
+    &:nth-child(2) {
+        .ConsultationCamera > svg > path {
+            fill: #616F82;
+        }
+    }
 }
 .ConsultationCamera {
     margin-right: 10px;
     width: 40px;
     height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 100%;
     background-color: #F1F2F3;
 }
@@ -33,4 +53,11 @@
 }
 .ConsultationContent {
     display: flex;
+}
+.ConsultationNotConfirmed {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #FF0000;
 }
