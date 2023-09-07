@@ -1,7 +1,7 @@
 import React from "react";
 import style from './Style.module.scss';
-import { Camera } from "../../../../../shared/core/ui/svg/camera";
-import { Friends } from "../../../../../shared/core/ui/svg/friends";
+import { Camera } from "../../../../shared/core/ui/svg/camera";
+import { Friends } from "../../../../shared/core/ui/svg/friends";
 
 export const ProfileTabConsultation = () => {
 

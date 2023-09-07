@@ -1,5 +1,5 @@
 import React, { createContext } from "react";
-import { ProfileHeader } from "../../shared/components/profile/header";
+import { ProfileHeader } from "../../widgets/profile/header";
 import style from './Style.module.scss';
 import { ProfileTabs } from "./tabs";
 import { ProfileContent } from "./content";

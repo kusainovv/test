@@ -1,7 +1,7 @@
 import React from "react";
 import style from './Style.module.scss';
 import { Telegram } from "../../../shared/core/ui/svg/telegram";
-import { DialogTabProps } from "../typing";
+import { DialogTabProps } from "../../../features/dialogues/typing";
 
 export const DialogTab = (props: DialogTabProps) => {
 

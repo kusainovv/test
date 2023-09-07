@@ -1,8 +1,8 @@
 import React from "react";
 import style from './Style.module.scss';
-import { Time } from "../../../../../shared/core/ui/svg/time";
-import { Calendar } from "../../../../../shared/core/ui/svg/calendar";
-import { WebinarCamera } from "../../../../../shared/core/ui/svg/webinar-camera";
+import { WebinarCamera } from "../../../../shared/core/ui/svg/webinar-camera";
+import { Calendar } from "../../../../shared/core/ui/svg/calendar";
+import { Time } from "../../../../shared/core/ui/svg/time";
 
 export const ProfileTabEvents = () => {
 

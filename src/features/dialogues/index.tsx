@@ -1,6 +1,6 @@
 import React, { Fragment, useMemo, useState } from "react";
 import style from './Style.module.scss';
-import { DialogTab } from "./components/dialog-tab";
+import { DialogTab } from "../../widgets/dialogues/tab/dialog-tab";
 
 export const Dialogues = () => {
     

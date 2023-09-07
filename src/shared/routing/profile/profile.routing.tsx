@@ -1,7 +1,8 @@
-import { ProfileTabConsultation } from "../../components/profile/tabs/consultation"
-import { ProfileTabEvents } from "../../components/profile/tabs/events"
-import { ProfileTabNotes } from "../../components/profile/tabs/notes"
-import { ProfileTabVideos } from "../../components/profile/tabs/videos"
+
+import { ProfileTabConsultation } from "../../../widgets/profile/tabs/consultation";
+import { ProfileTabEvents } from "../../../widgets/profile/tabs/events";
+import { ProfileTabNotes } from "../../../widgets/profile/tabs/notes";
+import { ProfileTabVideos } from "../../../widgets/profile/tabs/videos";
 import { ProfileTabContentRoutingProps } from "../typing/profie.routing"
 
 export const ProfileTabContentRouting = (props: ProfileTabContentRoutingProps) => {

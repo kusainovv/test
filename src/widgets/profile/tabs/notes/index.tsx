@@ -1,6 +1,6 @@
 import React from "react";
-import { ThreePoints } from "../../../../../shared/core/ui/svg/three-points";
 import style from './Style.module.scss';
+import { ThreePoints } from "../../../../shared/core/ui/svg/three-points";
 
 export const ProfileTabNotes = () => {
 
