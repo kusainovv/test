@@ -3,6 +3,7 @@ import style from './Style.module.scss'
 import { ProfileContext } from "../../../shared/core/utilities/profile.context";
 import { ProfileTabNotes } from "../tabs/tabs/notes";
 import { ProfileTabConsultation } from "../tabs/tabs/consultation";
+import { ProfileTabVideos } from "../tabs/tabs/videos";
 
 export const ProfileContent = () => {
 
@@ -15,7 +16,9 @@ export const ProfileContent = () => {
                     ? <ProfileTabNotes />
                     : value.isOpenConsultationsTab
                         ? <ProfileTabConsultation />
-                        : <></>
+                        : value.isOpenVideosTab 
+                            ? <ProfileTabVideos />
+                            : null
                 }
             </div>
         }}
