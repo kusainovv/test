@@ -1,0 +1,25 @@
+.Note {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.NoteWrapper {
+    display: flex;
+    font-size: 14px;
+    line-height: 24px;
+}
+.NoteInformation__date {
+    margin-right: 8px;
+    color: #616F82;
+}
+.NoteInformation__description {
+    color: black;
+}
+.NoteImage {
+    margin-top: 6px;
+    width: 199px;
+    height: 134px;
+    border-radius: 4px;
+    background-color: red;
+}

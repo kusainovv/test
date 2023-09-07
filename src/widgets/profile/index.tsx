@@ -1,9 +1,21 @@
-import React from "react";
+import React, { createContext } from "react";
 import { ProfileHeader } from "./header";
 import style from './Style.module.scss';
+import { ProfileTabs } from "./tabs";
+import { ProfileContent } from "./content";
+import { useProfileTab } from "../../shared/core/utilities/useProfileTab";
+import { ProfileContext } from "../../shared/core/utilities/profile.context";
 
 export const Profile = () => {
-    return <div className={style['Wrapper']}>
-        <ProfileHeader />
-    </div>
+
+    const profileTab = useProfileTab();
+
+    return <ProfileContext.Provider value={profileTab}>
+        <div className={style['Wrapper']}>
+            <ProfileHeader />
+            <ProfileTabs />
+
+            <ProfileContent />
+        </div>
+    </ProfileContext.Provider>
 }

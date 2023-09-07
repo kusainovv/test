@@ -1,0 +1,52 @@
+.Wrapper {
+    margin: 13px 0;
+    padding-right: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Navigations {
+    margin-bottom: 13px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.Navigation {
+    padding: 0 20px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #616F82;
+    cursor: pointer;
+    transition: 0.4s;
+
+    &:first-child {
+        padding: 0 20px 0 10px;
+    }
+
+    &:nth-child(odd) {
+        border-right: 1px solid #CDCDCD;
+    }
+}
+
+.AddWrapper {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    border: 1px solid #616F82;
+}
+
+.CreateNote {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.CreateNoteLabel {
+    margin: 0 10px 0 0;
+    font-size: 14px;
+    color: #616F82;
+    font-weight: 400;
+}
