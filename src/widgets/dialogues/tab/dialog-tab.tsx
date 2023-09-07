@@ -5,6 +5,7 @@ import { DialogTabProps } from "../../../shared/components/dialogues";
 import { Warning } from "../../../shared/core/ui/svg/warning";
 
 export const DialogTab = (props: DialogTabProps) => {
+    const user = props.user;
 
     const isReadenStyles = props.isReaden ? {
         borderLeft: '2px solid #4198C5'
@@ -16,10 +17,12 @@ export const DialogTab = (props: DialogTabProps) => {
 
     return <div className={style['Dialogue']} onClick={props.selectCurrentDialogueTab} style={{ ...isReadenStyles, ...isChoosenStyles }}>
         <div className={style['DialogueProfile']}>
-            <div className={style['DialogueProfileIcon']}>
+            <div className={style['DialogueProfileIcon']} style={{
+                backgroundImage: `url(${user.icon})`
+            }}>
             </div>
 
-            <p className={style['DialogueProfileName']}>Кравцова Александра</p>
+            <p className={style['DialogueProfileName']}>{user.username}</p>
         </div>
 
         {

@@ -17,13 +17,16 @@
     &:first-child {
         margin-top: 0;
     }
+
+    &:last-child {
+        margin-bottom: 0;
+    }
 }
 .DialogueProfileIcon {
     margin-right: 10px;
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: red;
 }
 .DialogueProfileName {
     margin: 0;

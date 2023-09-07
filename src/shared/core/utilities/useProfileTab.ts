@@ -2,7 +2,7 @@ import { useState } from "react"
 
 export const useProfileTab = () => {
 
-    const [isOpenNotesTab, setOpenNotesTab] = useState(false);
+    const [isOpenNotesTab, setOpenNotesTab] = useState(true);
     const [isOpenConsultationsTab, setOpenConsultationsTab] = useState(false);
     const [isOpenVideosTab, setOpenVideosTab] = useState(false);
     const [isOpenEventsTab, setOpenEventsTab] = useState(false);

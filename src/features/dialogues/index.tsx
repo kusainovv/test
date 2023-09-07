@@ -1,14 +1,15 @@
 import React, { Fragment, useMemo, useState } from "react";
 import style from './Style.module.scss';
 import { DialogTab } from "../../widgets/dialogues/tab/dialog-tab";
+import { UsersMockData } from "../../shared/mock/profile";
 
 export const Dialogues = () => {
     
     const [activeDialogueTab, setActiveDialogueTab] = useState(null);
 
-    const allDialogues = useMemo(() => Array.from({ length: 6 }).map((_, idx) => {
+    const allDialogues = useMemo(() => UsersMockData.map((user, idx) => {
         return <Fragment key={idx}>
-            <DialogTab isDialogueTab={activeDialogueTab === idx} order={idx} isReaden={idx === 0} selectCurrentDialogueTab={() => {
+            <DialogTab isDialogueTab={activeDialogueTab === idx} user={user} order={idx} isReaden={idx === 0} selectCurrentDialogueTab={() => {
                 setActiveDialogueTab(idx);
             }} />
         </Fragment>}), [ activeDialogueTab ])
