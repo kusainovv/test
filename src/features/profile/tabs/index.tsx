@@ -5,7 +5,7 @@ import { ProfileContext } from "../../../shared/core/utilities/profile.context";
 
 export const ProfileTabs = () => {
 
-    const [activeProfileTab, setActiveProfileTab] = useState(null);
+    const [activeProfileTab, setActiveProfileTab] = useState(0);
 
     return <ProfileContext.Consumer>
         {value => {
@@ -36,7 +36,9 @@ export const ProfileTabs = () => {
 
 
                 <div className={style['CreateNote']}>
-                    <p className={style['CreateNoteLabel']}>Новая заметка</p>
+                    <p className={style['CreateNoteLabel']}>
+                        { value.isOpenNotesTab ? 'Новая заметка' : value.isOpenConsultationsTab ? 'Записать' : value.isOpenVideosTab ? 'Рекомендовать' : 'Рекомендовать' }
+                    </p>
 
                     <div className={style['AddWrapper']}>
                         <Add />

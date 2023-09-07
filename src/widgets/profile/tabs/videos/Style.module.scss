@@ -24,6 +24,7 @@
     background-color: red;
     border-radius: 2px;
 }
+
 .VideoTitle {
     // width: 473px;
     width: 463px;
@@ -57,4 +58,18 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+}
+
+
+
+.VideoPreviewFirst {
+    background-image: url(https://i.ibb.co/WywXcS9/Rectangle.png);
+}
+
+.VideoPreviewSecond {
+    background-image: url(https://i.ibb.co/Mnb2RY8/Rectangle-1.png);
+}
+
+.VideoPreviewThird {
+    background-image: url(https://i.ibb.co/yFpTXGc/Rectangle-2.png);
 }

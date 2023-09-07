@@ -6,7 +6,7 @@ export const ProfileTabVideos = () => {
     return <div className={style['Wrapper']}>
         <div className={style['Video']}>
             <div className={style['VideoContent']}> 
-                <div className={style['VideoPreview']} />
+                <div className={`${style.VideoPreview} ${style.VideoPreviewFirst}`} />
 
                 <div className={style['VideoDescription']}>
                     <p className={style['VideoTitle']}>Крабик, ходьба в бок в приседе с двумя резинками Кра…</p>
@@ -17,7 +17,7 @@ export const ProfileTabVideos = () => {
 
         <div className={style['Video']}>
             <div className={style['VideoContent']}> 
-                <div className={style['VideoPreview']} />
+                <div className={`${style.VideoPreview} ${style.VideoPreviewSecond}`} />
 
                 <div className={style['VideoDescription']}>
                     <p className={style['VideoTitle']}>Разминка для локтевого сустава</p>
@@ -30,7 +30,7 @@ export const ProfileTabVideos = () => {
 
         <div className={style['Video']}>
             <div className={style['VideoContent']}> 
-                <div className={style['VideoPreview']} />
+                <div className={`${style.VideoPreview} ${style.VideoPreviewThird}`} />
 
                 <div className={style['VideoDescription']}>
                     <p className={style['VideoTitle']}>Разминка для локтевого суставаРазминка для локтевого..</p>
