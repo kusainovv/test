@@ -2,7 +2,7 @@ import React from "react";
 import style from './Style.module.scss';
 import { WebinarCamera } from "../../../../shared/core/ui/svg/webinar-camera";
 import { Calendar } from "../../../../shared/core/ui/svg/calendar";
-import { Time } from "../../../../shared/core/ui/svg/time";
+import { ClockCircle } from "../../../../shared/core/ui/svg/clock-circle";
 
 export const ProfileTabEvents = () => {
 
@@ -26,7 +26,7 @@ export const ProfileTabEvents = () => {
                         </div>
 
                         <div className={style['EventTime']}>
-                            <Time />
+                            <ClockCircle />
                             <span className={style['VideoDetails__label']}>17:00</span>
                         </div>
 
@@ -55,7 +55,7 @@ export const ProfileTabEvents = () => {
                         </div>
 
                         <div className={style['EventTime']}>
-                            <Time />
+                            <ClockCircle />
                             <span className={style['VideoDetails__label']}>17:00</span>
                         </div>
 
@@ -84,7 +84,7 @@ export const ProfileTabEvents = () => {
                         </div>
 
                         <div className={style['EventTime']}>
-                            <Time />
+                            <ClockCircle />
                             <span className={style['VideoDetails__label']}>17:00</span>
                         </div>
 

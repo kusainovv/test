@@ -1,7 +1,7 @@
 import React from "react";
 import style from './Style.module.scss';
 import { Camera } from "../../../../shared/core/ui/svg/camera";
-import { Friends } from "../../../../shared/core/ui/svg/friends";
+import { UserGroup } from "../../../../shared/core/ui/svg/user-group";
 
 export const ProfileTabConsultation = () => {
 
@@ -35,7 +35,7 @@ export const ProfileTabConsultation = () => {
         <div className={style['Consultation']}>
             <div className={style['ConsultationContent']}>
                 <div className={style['ConsultationCamera']}>
-                    <Friends />
+                    <UserGroup />
                 </div>
 
                 <div className={style['ConsultationDescription']}>

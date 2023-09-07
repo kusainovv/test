@@ -1,7 +1,8 @@
 import React from "react";
 import style from './Style.module.scss';
-import { Telegram } from "../../../shared/core/ui/svg/telegram";
-import { DialogTabProps } from "../../../features/dialogues/typing";
+import { Send } from "../../../shared/core/ui/svg/send";
+import { DialogTabProps } from "../../../shared/components/dialogues";
+import { Warning } from "../../../shared/core/ui/svg/warning";
 
 export const DialogTab = (props: DialogTabProps) => {
 
@@ -21,6 +22,9 @@ export const DialogTab = (props: DialogTabProps) => {
             <p className={style['DialogueProfileName']}>Кравцова Александра</p>
         </div>
 
-        <Telegram />
+        {
+            props.order === 0 ?  <Send /> : props.order === 2 ? <Warning /> : null
+        }
+       
     </div>
 }

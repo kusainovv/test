@@ -1,6 +1,6 @@
 import React from "react";
 import style from './Style.module.scss';
-import { ThreePoints } from "../../../../shared/core/ui/svg/three-points";
+import { MorePoints } from "../../../../shared/core/ui/svg/more-points";
 
 export const ProfileTabNotes = () => {
 
@@ -13,7 +13,7 @@ export const ProfileTabNotes = () => {
                 </div>
 
                 <div className={style['MoreButton']}>
-                    <ThreePoints />
+                    <MorePoints />
                 </div>
             </div>
         </div>
@@ -26,7 +26,7 @@ export const ProfileTabNotes = () => {
                 </div>
 
                 <div className={style['MoreButton']}>
-                    <ThreePoints />
+                    <MorePoints />
                 </div>
             </div>
 

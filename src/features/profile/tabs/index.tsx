@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Add } from "../../../shared/core/ui/svg/add";
+import { Add } from "../../../shared/core/ui/svg/plus";
 import style from './Style.module.scss'
 import { ProfileContext } from "../../../shared/core/utilities/profile.context";
 

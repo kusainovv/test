@@ -1,6 +1,6 @@
 import React from "react";
 import style from './Style.module.scss';
-import { ThreePoints } from "../../../shared/core/ui/svg/three-points";
+import { MorePoints } from "../../../shared/core/ui/svg/more-points";
 
 export const ProfileHeader = () => {
     return <div className={style['Wrapper']}>
@@ -15,7 +15,7 @@ export const ProfileHeader = () => {
         </div>
 
         <div className={style['MoreButtons']}>
-            <ThreePoints />
+            <MorePoints />
         </div>
 
     </div>

@@ -8,7 +8,7 @@ export const Dialogues = () => {
 
     const allDialogues = useMemo(() => Array.from({ length: 6 }).map((_, idx) => {
         return <Fragment key={idx}>
-            <DialogTab isDialogueTab={activeDialogueTab === idx} isReaden={idx === 0} selectCurrentDialogueTab={() => {
+            <DialogTab isDialogueTab={activeDialogueTab === idx} order={idx} isReaden={idx === 0} selectCurrentDialogueTab={() => {
                 setActiveDialogueTab(idx);
             }} />
         </Fragment>}), [ activeDialogueTab ])

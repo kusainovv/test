@@ -9,23 +9,15 @@
     border-radius: 4px;
     box-sizing: border-box;
 }
-.DropMenuIcon {
-    background-color: #F1F2F3;
+.MenuUnfoldIcon, .AddIcon {    
     border-radius: 100%;
     width: 34px;
     height: 34px;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.AddIcon {
+    cursor: pointer;
     background-color: #F1F2F3;
-    border-radius: 100%;
-    width: 34px;
-    height: 34px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 .Icons {
     display: grid;
