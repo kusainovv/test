@@ -27,3 +27,29 @@
     color: #616F82;
     cursor: pointer;
 }
+.DialoguesCheckboxLabel {
+    margin-right: 10px;
+    color:#616F82;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px; 
+}
+.DialoguesSelect {
+    display: grid;
+    grid-template-columns: min-content min-content;
+    gap: 0 10px;
+}
+.DialoguesHeaderSelect {
+    display: flex;
+}
+.DialoguesActions {
+    display: grid;
+    grid-template-columns: min-content min-content;
+    gap: 0 10px;
+}
+.DialoguesAction {
+    color: #616F82;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}

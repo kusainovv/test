@@ -3,6 +3,7 @@ import style from './Style.module.scss';
 import { Send } from "../../../shared/core/ui/svg/send";
 import { DialogTabProps } from "../../../shared/components/dialogues";
 import { Warning } from "../../../shared/core/ui/svg/warning";
+import { Checkbox } from "../../../shared/components/dialogues/checkbox";
 
 export const DialogTab = (props: DialogTabProps) => {
     const user = props.user;
@@ -17,6 +18,14 @@ export const DialogTab = (props: DialogTabProps) => {
 
     return <div className={style['Dialogue']} onClick={props.selectCurrentDialogueTab} style={{ ...isReadenStyles, ...isChoosenStyles }}>
         <div className={style['DialogueProfile']}>
+            {props.isSelectDialogues ? <div className={style['DialogueProfileCheckbox']}>
+                <Checkbox
+                    value={props.isSelectDialogue}
+                    onSelect={props.addOneDialogue}
+                    onUnSelect={props.substractOneDialogue}
+                />
+            </div> : null}
+
             <div className={style['DialogueProfileIcon']} style={{
                 backgroundImage: `url(${user.icon})`
             }}>
@@ -26,8 +35,8 @@ export const DialogTab = (props: DialogTabProps) => {
         </div>
 
         {
-            props.order === 0 ?  <Send /> : props.order === 2 ? <Warning /> : null
+            props.order === 0 ? <Send /> : props.order === 2 ? <Warning /> : null
         }
-       
+
     </div>
 }
