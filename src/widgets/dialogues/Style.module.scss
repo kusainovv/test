@@ -2,12 +2,15 @@
     margin-top: 15px;
 }
 .DialoguesHeader {
+    height: 20px;
     padding: 0 15px;
     margin-bottom: 15px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .DialoguesHeader__count {
+    margin: 0;
     padding: 2px 4px;
     display: flex;
     justify-content: center;

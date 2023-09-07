@@ -15,8 +15,10 @@
 }
 .ProfileInformationName { 
     margin: 0 0 6px 0; 
+    font-family: SF Pro Display;
     font-size: 16px;
     font-weight: 400;
+    line-height: 20px;
     color: #171618;
 }
 
@@ -35,7 +37,11 @@
 }
 .ProfileInformation {
     margin-left: 14px;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20px;
 }
 .MoreButtons {
+    padding: 7px 0;
     cursor: pointer;
 }

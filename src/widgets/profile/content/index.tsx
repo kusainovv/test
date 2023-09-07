@@ -4,6 +4,7 @@ import { ProfileContext } from "../../../shared/core/utilities/profile.context";
 import { ProfileTabNotes } from "../tabs/tabs/notes";
 import { ProfileTabConsultation } from "../tabs/tabs/consultation";
 import { ProfileTabVideos } from "../tabs/tabs/videos";
+import { ProfileTabEvents } from "../tabs/tabs/events";
 
 export const ProfileContent = () => {
 
@@ -18,7 +19,7 @@ export const ProfileContent = () => {
                         ? <ProfileTabConsultation />
                         : value.isOpenVideosTab 
                             ? <ProfileTabVideos />
-                            : null
+                            : <ProfileTabEvents />
                 }
             </div>
         }}

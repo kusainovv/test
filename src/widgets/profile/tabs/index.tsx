@@ -23,6 +23,8 @@ export const ProfileTabs = () => {
                                     value.openConsultationsTab();
                                 } else if (navigation === 'Видео') {
                                     value.openVideosTab();
+                                } else {
+                                    value.openEventsTab();
                                 }
 
                             }} style={idx === activeProfileTab ? { color: '#4198C5' } : {}} className={style['Navigation']}>

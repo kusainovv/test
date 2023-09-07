@@ -1,21 +1,22 @@
 .Wrapper {
     padding: 10px;
 }
-.Video {
+.Event {
     display: flex;
     align-items: flex-end;
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 10px;
-    padding: 5px 10px 5px 10px;
+    padding: 8px 10px 8px 10px;
     box-sizing: border-box;
     width: 100%;
+    min-height: 66px;
     border: 1px solid #CDCDCD;
     border-radius: 4px;
     filter: drop-shadow(0px 0px 4px rgba(47, 47, 47, 0.07));
 }
-.VideoPreview {
-    margin-right: 10px;
+.EventPreview {
+    margin-right: 9px;
     width: 82px;
     height: 46px;
     display: flex;
@@ -24,19 +25,18 @@
     background-color: red;
     border-radius: 2px;
 }
-.VideoTitle {
+.EventTitle {
     // width: 473px;
     width: 463px;
     // Я написал Вашему hr, что макет немного ~корявый, если брать pf то ширина 473px, но ux важнее поэтому 463px
-
-    margin: 0 0 17px 0;
+    margin: 0 0 8px 0;
     color: #161718;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
-    line-height: 16px;
+    line-height: 20px; 
     overflow: hidden;
 }
-.VideoTime {
+.EventTime {
     margin: 0;
     font-family: system-ui;
     color:#616F82;
@@ -50,11 +50,33 @@
     text-align: right;
     white-space: pre;
 }
-.VideoContent {
+.EventContent {
     display: flex;
 }
-.VideoDescription {
+.EventDescription {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+}
+
+.EventType, .EventDate, .EventTime  {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    margin-right: 25px;
+
+    svg {
+        margin-right: 6px;
+    }
+
+    .VideoDetails__label {
+        color: #161718;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 20px;
+    }
+}
+.VideoDetails {
+    display: flex;
+    align-items: center;
 }
