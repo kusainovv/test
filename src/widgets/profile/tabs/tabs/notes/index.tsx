@@ -4,7 +4,7 @@ import style from './Style.module.scss';
 
 export const ProfileTabNotes = () => {
 
-    return <>
+    return <div className={style['Wrapper']}>
         <div className={style['Note']}>
             <div className={style['NoteWrapper']}>
                 <div className={style['NoteInformation']}>
@@ -32,5 +32,5 @@ export const ProfileTabNotes = () => {
 
             <div className={style['NoteImage']}></div>
         </div>
-    </>
+    </div>
 }

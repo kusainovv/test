@@ -16,7 +16,13 @@ export const ProfileTabs = () => {
                         ['Заметки', 'Консультация', 'Видео', 'Меропрития'].map((navigation, idx) => {
                             return <div key={idx} onClick={() => {
                                 setActiveProfileTab(idx);
-                                value.openNotesTab();
+                                
+                                if (navigation === 'Заметки') {
+                                    value.openNotesTab();
+                                } else if (navigation === 'Консультация') {
+                                    value.openConsultationsTab();
+                                }
+
                             }} style={idx === activeProfileTab ? { color: '#4198C5' } : {}} className={style['Navigation']}>
                                 {navigation}
                             </div>
